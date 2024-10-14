@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Dev/Python%20Projects/MLOps/phase_1.0/mlruns/994522926505138160/d920ec958522456287403dd3b1033065/artifacts
+end_time: 1728844534405
+entry_point_name: ''
+experiment_id: '994522926505138160'
+lifecycle_stage: active
+run_id: d920ec958522456287403dd3b1033065
+run_name: funny-lamb-267
+run_uuid: d920ec958522456287403dd3b1033065
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1728844530205
+status: 3
+tags: []
+user_id: code_
