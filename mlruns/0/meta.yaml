@@ -1,6 +1,6 @@
-artifact_location: file:///D:/Dev/Python%20Projects/MLOps/phase_1.0/mlruns/0
-creation_time: 1728844375507
+artifact_location: file:///home/ferchooz/Documents/MNA/Proyecto/Team-30-phase_1/mlruns/0
+creation_time: 1729478969221
 experiment_id: '0'
-last_update_time: 1728844375507
+last_update_time: 1729478969221
 lifecycle_stage: active
 name: Default
