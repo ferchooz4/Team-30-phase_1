@@ -1,0 +1,15 @@
+artifact_uri: file:///home/ferchooz/Documents/MNA/Proyecto/Team-30-phase_1/mlruns/540061191780885716/27da75084a594f7690cff193bee6bacb/artifacts
+end_time: 1729479977224
+entry_point_name: ''
+experiment_id: '540061191780885716'
+lifecycle_stage: active
+run_id: 27da75084a594f7690cff193bee6bacb
+run_name: bedecked-sheep-752
+run_uuid: 27da75084a594f7690cff193bee6bacb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1729479975848
+status: 3
+tags: []
+user_id: ferchooz
