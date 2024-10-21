@@ -59,12 +59,12 @@ stages:
       size: 16016
     - path: src/train.py
       hash: md5
-      md5: a935a9544179128db245e69d42a84094
-      size: 1299
+      md5: 9eada406f3bacc4780c8af11d1c4284e
+      size: 1765
     outs:
     - path: models/logistic_regression_model.pkl
       hash: md5
-      md5: 20eff8b98ad34576edab1d55cb3304e4
+      md5: e841b1208445694ed66ff94b2e82cd09
       size: 1359
   train_random_forest:
     cmd: python src/train.py data/processed/X_train.csv data/processed/y_train.csv
@@ -80,16 +80,16 @@ stages:
       size: 16016
     - path: src/train.py
       hash: md5
-      md5: a935a9544179128db245e69d42a84094
-      size: 1299
+      md5: 9eada406f3bacc4780c8af11d1c4284e
+      size: 1765
     outs:
     - path: models/random_forest_model.pkl
       hash: md5
-      md5: 5cfac69a668524d875db6164db186268
-      size: 582793
+      md5: e10341c258a69a05f0c7c7ff0c5bac3d
+      size: 748569
   evaluate_logistic:
     cmd: python src/evaluate.py models/logistic_regression_model.pkl data/processed/X_test.csv
-      data/processed/y_test.csv reports/logistic_evaluation.txt
+      data/processed/y_test.csv reports/logistic_evaluation.txt runids/logistic_regression.txt
     deps:
     - path: data/processed/X_test.csv
       hash: md5
@@ -101,20 +101,20 @@ stages:
       size: 4016
     - path: models/logistic_regression_model.pkl
       hash: md5
-      md5: 20eff8b98ad34576edab1d55cb3304e4
+      md5: e841b1208445694ed66ff94b2e82cd09
       size: 1359
     - path: src/evaluate.py
       hash: md5
-      md5: 1ce1f5a7d4d9eade2fd8c427a34294cd
-      size: 1047
+      md5: b7d923425ee5084462e26d7095284417
+      size: 1771
     outs:
     - path: reports/logistic_evaluation.txt
       hash: md5
-      md5: 5c79ba52e3db006fde1e83e537d4a26e
+      md5: ed40f6160a07947632eee1d0d3769e08
       size: 394
   evaluate_random_forest:
     cmd: python src/evaluate.py models/random_forest_model.pkl data/processed/X_test.csv
-      data/processed/y_test.csv reports/random_forest_evaluation.txt
+      data/processed/y_test.csv reports/random_forest_evaluation.txt runids/random_forest.txt
     deps:
     - path: data/processed/X_test.csv
       hash: md5
@@ -126,12 +126,12 @@ stages:
       size: 4016
     - path: models/random_forest_model.pkl
       hash: md5
-      md5: 5cfac69a668524d875db6164db186268
-      size: 582793
+      md5: e10341c258a69a05f0c7c7ff0c5bac3d
+      size: 748569
     - path: src/evaluate.py
       hash: md5
-      md5: 1ce1f5a7d4d9eade2fd8c427a34294cd
-      size: 1047
+      md5: b7d923425ee5084462e26d7095284417
+      size: 1771
     outs:
     - path: reports/random_forest_evaluation.txt
       hash: md5

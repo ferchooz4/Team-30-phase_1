@@ -1,0 +1,15 @@
+artifact_uri: file:///home/ferchooz/Documents/MNA/Proyecto/Team-30-phase_1/mlruns/540061191780885716/cc3f2767032a412fbf7dfa36265c37aa/artifacts
+end_time: 1729479535099
+entry_point_name: ''
+experiment_id: '540061191780885716'
+lifecycle_stage: active
+run_id: cc3f2767032a412fbf7dfa36265c37aa
+run_name: chill-shrew-776
+run_uuid: cc3f2767032a412fbf7dfa36265c37aa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1729479531073
+status: 3
+tags: []
+user_id: ferchooz
