@@ -1,0 +1,15 @@
+artifact_uri: file:///home/ferchooz/Documents/MNA/Proyecto/Team-30-phase_1/mlruns/540061191780885716/63667d1bd91b432bb5deeeeca252682b/artifacts
+end_time: 1729479533967
+entry_point_name: ''
+experiment_id: '540061191780885716'
+lifecycle_stage: active
+run_id: 63667d1bd91b432bb5deeeeca252682b
+run_name: smiling-dolphin-596
+run_uuid: 63667d1bd91b432bb5deeeeca252682b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1729479528575
+status: 3
+tags: []
+user_id: ferchooz

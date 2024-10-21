@@ -1,0 +1,15 @@
+artifact_uri: file:///home/ferchooz/Documents/MNA/Proyecto/Team-30-phase_1/mlruns/540061191780885716/9af5a16f025a4c4eb0b7127d19560c61/artifacts
+end_time: 1729480023039
+entry_point_name: ''
+experiment_id: '540061191780885716'
+lifecycle_stage: active
+run_id: 9af5a16f025a4c4eb0b7127d19560c61
+run_name: grandiose-fowl-447
+run_uuid: 9af5a16f025a4c4eb0b7127d19560c61
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1729480017810
+status: 3
+tags: []
+user_id: ferchooz

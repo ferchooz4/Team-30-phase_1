@@ -5,6 +5,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 import joblib
 import mlflow
+import os
 
 def load_params():
     with open("params.yaml", 'r') as ymlfile:
@@ -27,11 +28,28 @@ def train_model(X_train_path, y_train_path, model_type):
     mlflow.set_experiment(params['mlflow']['experiment_name'])
     mlflow.set_tracking_uri(params['mlflow']['tracking_uri'])
 
-    with mlflow.start_run():
+    with mlflow.start_run() as run:
+
+        
+        tags = params['mlflow'].get('tags', {})
+        tags['model_type'] = model
+        mlflow.set_tags(tags)
+
+
         model.fit(X_train, y_train)
+        mlflow.log_params(model_params)
         mlflow.sklearn.log_model(model, f"{model_type}_model")
 
-    return model
+        output_dir = params['run']['filepath']
+        os.makedirs(output_dir, exist_ok=True)
+
+        run_id = run.info.run_id
+        run_id_file = os.path.join(output_dir, f"{model_type}.txt")
+
+        with open(run_id_file, "w") as f:
+            f.write(run_id)
+
+    return model, run_id
 
 if __name__ == '__main__':
     X_train_path = sys.argv[1]
@@ -40,5 +58,5 @@ if __name__ == '__main__':
     model_dir = params['data']['models']
     model_path = f"{model_dir}/{model_type}_model.pkl"
 
-    model = train_model(X_train_path, y_train_path, model_type)
+    model, run_id = train_model(X_train_path, y_train_path, model_type)
     joblib.dump(model, model_path)

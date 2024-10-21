@@ -1,0 +1,15 @@
+artifact_uri: file:///home/ferchooz/Documents/MNA/Proyecto/Team-30-phase_1/mlruns/540061191780885716/9c33bab8ba034ffcaec07ad5b72cf46e/artifacts
+end_time: 1729479954161
+entry_point_name: ''
+experiment_id: '540061191780885716'
+lifecycle_stage: active
+run_id: 9c33bab8ba034ffcaec07ad5b72cf46e
+run_name: bemused-calf-185
+run_uuid: 9c33bab8ba034ffcaec07ad5b72cf46e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1729479954142
+status: 4
+tags: []
+user_id: ferchooz
