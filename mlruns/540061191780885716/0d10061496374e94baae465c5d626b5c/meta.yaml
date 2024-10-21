@@ -1,0 +1,15 @@
+artifact_uri: file:///home/ferchooz/Documents/MNA/Proyecto/Team-30-phase_1/mlruns/540061191780885716/0d10061496374e94baae465c5d626b5c/artifacts
+end_time: 1729480176827
+entry_point_name: ''
+experiment_id: '540061191780885716'
+lifecycle_stage: active
+run_id: 0d10061496374e94baae465c5d626b5c
+run_name: clumsy-chimp-397
+run_uuid: 0d10061496374e94baae465c5d626b5c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1729480171649
+status: 3
+tags: []
+user_id: ferchooz
